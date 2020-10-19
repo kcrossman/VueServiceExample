@@ -1,0 +1,43 @@
+{
+  "name": "@kcrossman/vue-service-example",
+  "version": "0.0.0-development",
+  "private": true,
+  "scripts": {
+    "test": "yarn test:unit --coverage",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "sb": "yarn storybook:serve",
+    "storybook": "yarn storybook:serve",
+    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src/*"
+  ],
+  "dependencies": {
+    "core-js": "3.6.5",
+    "vue": "2.6.12"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "6.0.26",
+    "@storybook/addon-docs": "6.0.26",
+    "@storybook/addon-knobs": "6.0.26",
+    "@storybook/addon-links": "6.0.26",
+    "@storybook/vue": "6.0.26",
+    "@testing-library/vue": "5.1.0",
+    "@vue/cli-plugin-babel": "4.5.8",
+    "@vue/cli-plugin-eslint": "4.5.8",
+    "@vue/cli-plugin-unit-jest": "4.5.8",
+    "@vue/cli-service": "4.5.8",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/test-utils": "1.1.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-vue": "6.2.2",
+    "prettier": "1.19.1",
+    "vue-cli-plugin-storybook": "1.3.0",
+    "vue-template-compiler": "2.6.12"
+  }
+}
