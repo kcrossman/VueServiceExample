@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <h1>
-      Value: <span class="value">{{ value }}</span>
+      Value: <span :class="$style.value">{{ value }}</span>
     </h1>
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
   padding: 12px;
 }
 
-.container.value {
+.value {
   color: red;
 }
 </style>
