@@ -11,9 +11,3 @@ export const Default = () => ({
     <TestComponent />
   `
 });
-
-Default.story = {
-  parameters: {
-    jest: ["TestComponent.spec.js"]
-  }
-};
