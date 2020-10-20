@@ -23,8 +23,4 @@ const TestService = new Vue({
   }
 }).$mount();
 
-if (!Vue.prototype.$TestService) {
-  Vue.prototype.$TestService = TestService;
-}
-
 export default TestService;

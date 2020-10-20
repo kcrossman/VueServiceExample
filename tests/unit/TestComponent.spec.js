@@ -2,9 +2,7 @@ import { render, screen } from "@testing-library/vue";
 import Vue from "vue";
 
 import TestService from "../../src/services/TestService";
-if (!Vue.prototype.$TestService) {
-  Vue.prototype.$TestService = TestService;
-}
+Vue.prototype.$TestService = TestService;
 
 import TestComponent from "../../src/components/TestComponent.vue";
 
